@@ -1,0 +1,2 @@
+Número do quarto: 22
+Andar: 2
