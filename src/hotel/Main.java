@@ -3,16 +3,18 @@ package hotel;
 
 import hotel.br.com.hotel.Controller.ClienteController;
 import hotel.br.com.hotel.Controller.EnderecoController;
+import hotel.br.com.hotel.Controller.TipoQuartoController;
 import hotel.br.com.hotel.Controller.PagamentoController;
 import hotel.br.com.hotel.Controller.QuartoController;
 import hotel.br.com.hotel.Controller.ReservaController;
-import hotel.br.com.hotel.Controller.TipoQuartoController;
+
 import hotel.br.com.hotel.Model.Cliente;
 import hotel.br.com.hotel.Model.Endereco;
+import hotel.br.com.hotel.Model.TipoQuarto;
 import hotel.br.com.hotel.Model.Pagamento;
 import hotel.br.com.hotel.Model.Quarto;
 import hotel.br.com.hotel.Model.Reserva;
-import hotel.br.com.hotel.Model.TipoQuarto;
+
 
 /*
  * @author CarlaRegina-Dev
@@ -23,7 +25,7 @@ public class Main {
         
         EnderecoController enderecoController = new EnderecoController();
         Endereco endereco = new Endereco();
-        endereco = enderecoController.salvarEndereco(41500701,"Vila Bosque Feliz",20,"","São Cristóvão","Salvador","Bahia","Brasil"); 
+        endereco = enderecoController.salvarEndereco(41500701,"Vila Bosque Feliz",20,"","São Cristóvão","Salvador","Bahia","Brasil");
         
         ClienteController clienteController = new  ClienteController();
         Cliente cliente = new Cliente();
@@ -39,7 +41,7 @@ public class Main {
         
         PagamentoController pagamentoController = new PagamentoController();
         Pagamento pagamento = new Pagamento();
-        pagamento = pagamentoController.salvarPagamento(28_08_21,22.00);
+        pagamento = pagamentoController.salvarPagamento("28/08/21",22.00f);
         
         ReservaController reservaController = new ReservaController();
         Reserva reserva = new Reserva();

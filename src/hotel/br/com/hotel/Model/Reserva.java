@@ -47,7 +47,7 @@ public class Reserva {
             this.dataFim = dataFim;
         }
 
-        public boolean isStatus() {
+        public boolean getStatus() {
             return status;
         }
 

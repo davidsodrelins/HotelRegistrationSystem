@@ -4,10 +4,10 @@ package hotel.br.com.hotel.Model;
  * @author CarlaRegina-Dev
  */
 public class Pagamento {
-    private int dataPagamento;
+    private String dataPagamento;
     private double valorPagamento;
 
-    public Pagamento(int dataPagamento, double valorPagamento) {
+    public Pagamento(String dataPagamento, double valorPagamento) {
         this.dataPagamento = dataPagamento;
         this.valorPagamento = valorPagamento;
     }
@@ -16,11 +16,11 @@ public class Pagamento {
         
     }
 
-        public int getDataPagamento() {
+        public String getDataPagamento() {
             return dataPagamento;
         }
 
-        public void setDataPagamento(int dataPagamento) {
+        public void setDataPagamento(String dataPagamento) {
             this.dataPagamento = dataPagamento;
         }
 

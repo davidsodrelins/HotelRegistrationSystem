@@ -72,7 +72,7 @@ public class Cliente {
             this.endereco = endereco;
         }
 
-    public boolean setEndereco() {
+    public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

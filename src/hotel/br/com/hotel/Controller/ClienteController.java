@@ -3,9 +3,12 @@ package hotel.br.com.hotel.Controller;
 
 import hotel.br.com.hotel.Model.Cliente;
 import hotel.br.com.hotel.Model.Endereco;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /*
- * @author carla
+ * @author CarlaRegina-Dev
  */
 public class ClienteController {
     
@@ -18,6 +21,27 @@ public class ClienteController {
             cliente.setDataNascimento(dataNascimento);
             cliente.setEndereco(endereco);
 
-            return cliente;
+            salvarTxt(cliente);
+            return cliente;        
+    }
+    private void salvarTxt(Cliente cliente){
+        try {
+            FileWriter fw = new FileWriter ("Cliente.txt");
+            PrintWriter pw = new PrintWriter(fw);
+            pw.println("Nome: "+cliente.getNomeCliente());
+            pw.println("CPF: "+cliente.getCpfCliente());
+            pw.println("Email: "+cliente.getEmailCliente());
+            pw.println("Telefone: "+cliente.getTelefone());
+            pw.println("Data de Nascimento: "+cliente.getDataNascimento());
+            
+            pw.flush();
+            pw.close();
+            fw.close(); 
+        }
+        catch (IOException e) {
+           System.out.println(e);
+        }
     }
 }
+   
+
