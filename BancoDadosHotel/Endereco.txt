@@ -1,0 +1,8 @@
+CEP: 45
+Rua: dssd
+Número da Casa: 11
+Complemento: dsdsd
+Bairro: fdfd
+Cidade: fdfd
+Estado: fdfd
+País: dfd

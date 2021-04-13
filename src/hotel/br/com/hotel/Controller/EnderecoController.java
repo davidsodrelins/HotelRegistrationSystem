@@ -27,7 +27,7 @@ public class EnderecoController {
     }
     private void salvarTxt(Endereco endereco){
         try {
-           FileWriter fw = new FileWriter ("Endereco.txt");
+           FileWriter fw = new FileWriter ("BancoDadosHotel\\Endereco.txt");
             PrintWriter pw = new PrintWriter(fw);
             pw.println("CEP: "+endereco.getCep());
             pw.println("Rua: "+endereco.getRua());

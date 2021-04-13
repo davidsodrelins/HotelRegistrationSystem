@@ -26,7 +26,7 @@ public class ClienteController {
     }
     private void salvarTxt(Cliente cliente){
         try {
-            FileWriter fw = new FileWriter ("Cliente.txt");
+            FileWriter fw = new FileWriter ("BancoDadosHotel\\Cliente.txt");
             PrintWriter pw = new PrintWriter(fw);
             pw.println("Nome: "+cliente.getNomeCliente());
             pw.println("CPF: "+cliente.getCpfCliente());
@@ -41,6 +41,10 @@ public class ClienteController {
         catch (IOException e) {
            System.out.println(e);
         }
+    }
+
+    public Cliente salvarcliente(int parseInt, String text, int parseInt0, String text0, String text1, String text2, String text3, String text4) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
    
